@@ -1,307 +1,355 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Volare Psicología",
+  logo: "/images/logo.png",
+  tagline: "Tu espacio seguro de crecimiento personal en Alicante",
+  description: "Volare Psicología es un centro especializado en psicología ubicado en Alicante, dirigido por Candela Fernández Alcaraz. Nuestro equipo de psicólogas (Candela, Martina y Mónica) ofrece terapia individual, psicología infantil y juvenil, terapia de pareja, tratamiento de ansiedad, depresión, trastornos alimenticios, duelo y dependencia emocional. Con 5 estrellas en Google y 45 reseñas, ofrecemos acompañamiento terapéutico presencial y online en un ambiente de confianza absoluta.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#113457",
+    secondary: "#0c3959",
+    accent: "#0c3959",
+    neutral: "#eceff2"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "641 13 66 84",
+  whatsapp: "+34641136684",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros servicios de psicología.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Pl. Calvo Sotelo, 5, primero, 03001 Alicante (Alacant), Alicante, España",
+    city: "Alicante",
+    province: "Álava",
+    postalCode: "03001",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=12497847333034338196&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Volare%20Psicolog%C3%ADa%20%4038.3432%2C-0.488194&z=16&output=embed",
+  coordinates: {
+    lat: 38.3432,
+    lng: -0.488194
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - viernes",
+      hours: "9:00–21:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 45,
+    url: "https://maps.google.com/?cid=12497847333034338196&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Rubén Armengol",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "He tenido la oportunidad de acudir a consulta con la psicóloga Mónica y mi experiencia ha sido excelente. Desde el primer momento me sentí escuchado y comprendido, creando un ambiente de confianza absoluta. Su profesionalidad y empatía son destacables, y demuestra un profundo conocimiento para guiar en los procesos de crecimiento personal.\n\nLa atención es cercana, respetuosa y siempre adaptada a las necesidades individuales. Además, ofrece herramientas prácticas y consejos muy útiles para aplicar en el día a día.\n\nRecomiendo al 100% sus servicios a cualquier persona que busque apoyo psicológico de calidad. ⭐⭐⭐⭐⭐",
+        date: "Hace 5 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Cristina Bernabé Martínez",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Estuve con Martina y desde la primera sesión me sentí escuchada, comprendida y en un espacio completamente seguro. Gracias a ella he podido entenderme mejor, trabajar en mis emociones y adquirir herramientas prácticas para enfrentar situaciones que antes me desbordaban. Recomiendo la terapia con ella sin dudarlo a quienes estén buscando una psicóloga confiable, ética y profundamente dedicada. Ha sido una parte fundamental de mi proceso de crecimiento personal.",
+        date: "Hace 6 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Pablo Serrano",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Llevo más de un año trabajando con Candela y no puedo estar más agradecido. Desde el primer momento supo cómo abordar mi caso, adaptándose a mis necesidades de forma natural y con mucha empatía.\nProfesional, alegre y cercana: cualidades clave para que la terapia funcionara y se convirtiera en un verdadero punto de inflexión en mi vida. Gracias a ella, he encontrado el equilibrio que necesitaba.",
+        date: "Hace 8 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Cristina Escudero Cana",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Muy agradecida con lo gran profesional que es Candela. Hoy recibo el alta tras un año de un proceso bonito de terapia junto a Candela. No he podido tener más suerte de conocerla; persona profesional y tan cercana que hace todo mucho más fácil. Entendió todo desde el primer momento y me ha ayudado a mejorar los objetivos que tenía y como consecuencias otros más.",
+        date: "Hace 7 meses"
       },
-    ],
+      {
+        author: "Sandra Lencina",
+        rating: 5,
+        text: "Empecé la terapia con Martina y desde el primer momento me sentí en la confianza de poder abrirme ya que es muy empática, profesional y cercana. He decidido terminar mis sesiones y si en algún momento decido volver será con ella, la recomiendo al 100%.",
+        date: "Hace 3 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "terapia-individual",
+      name: "Terapia Individual",
+      description: "Sesiones personalizadas donde te sentirás escuchado y comprendido desde el primer momento. Trabajamos ansiedad, depresión, autoestima, autoexigencia, perfeccionismo, crisis vitales y duelo. Te ofrecemos herramientas prácticas y estrategias adaptadas a tu situación personal para que logres el equilibrio que necesitas.",
+      benefits: [
+        "Espacio seguro y confidencial con profesionales empáticas",
+        "Herramientas prácticas aplicables en tu día a día",
+        "Proceso adaptado a tu ritmo y necesidades individuales"
+      ],
+      icon: "User"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "trastornos-alimenticios",
+      name: "Trastornos Alimenticios e Imagen Corporal",
+      description: "Tratamiento especializado en trastornos de la conducta alimentaria, trastorno por atracón, trastorno dismórfico corporal e insatisfacción con la imagen corporal. Abordamos también la relación con la alimentación desde una perspectiva integradora que incluye nutrición y dietética cuando es necesario.",
+      benefits: [
+        "Equipo especializado en conducta alimentaria",
+        "Enfoque integral: psicología, nutrición y dietética",
+        "Acompañamiento en la mejora de tu relación con tu cuerpo"
+      ],
+      icon: "Heart"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "psicologia-infantil-juvenil",
+      name: "Psicología Infantil y Juvenil",
+      description: "Atención especializada para niños y adolescentes con dificultades emocionales, trastornos del aprendizaje, problemas de conducta o alimentación infantil. Creamos un ambiente seguro donde los más jóvenes pueden expresarse y desarrollar recursos emocionales saludables. Trabajamos también con las familias para fortalecer el vínculo.",
+      benefits: [
+        "Profesionales expertas en infancia y adolescencia",
+        "Instalaciones amplias y modernas adaptadas a los más jóvenes",
+        "Orientación y apoyo a las familias durante el proceso"
+      ],
+      icon: "Baby"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "ansiedad-fobias",
+      name: "Ansiedad y Fobias",
+      description: "Tratamiento especializado para superar problemas de ansiedad, ataques de pánico, fobias y estrés crónico. Utilizamos terapia cognitivo-conductual y otras técnicas basadas en evidencia científica. Te ayudamos a identificar los desencadenantes y a desarrollar estrategias efectivas para recuperar el control de tu vida.",
+      benefits: [
+        "Técnicas cognitivo-conductuales de eficacia probada",
+        "Reducción progresiva de síntomas desde las primeras sesiones",
+        "Prevención de recaídas con herramientas para el largo plazo"
+      ],
+      icon: "Brain"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "terapia-pareja-familia",
+      name: "Terapia de Pareja y Familia",
+      description: "Mejoramos la comunicación, resolvemos conflictos y fortalecemos los vínculos en la relación de pareja y en el sistema familiar. Trabajamos dependencia emocional, crisis de pareja, problemas de convivencia y dinámicas familiares disfuncionales. Un espacio neutral donde cada voz es escuchada con respeto.",
+      benefits: [
+        "Mejora la comunicación y comprensión mutua",
+        "Resolución efectiva de conflictos recurrentes",
+        "Fortalecimiento del vínculo afectivo"
+      ],
+      icon: "Heart"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "dependencia-emocional",
+      name: "Dependencia Emocional",
+      description: "Acompañamiento terapéutico para personas que experimentan dependencia emocional en sus relaciones. Te ayudamos a construir una autoestima sólida, establecer límites saludables y desarrollar autonomía emocional. Trabajamos los patrones que te impiden relacionarte desde el equilibrio y el respeto hacia ti mismo.",
+      benefits: [
+        "Construcción de una autoestima sólida y saludable",
+        "Aprendizaje de límites y autonomía emocional",
+        "Relaciones más equilibradas y satisfactorias"
+      ],
+      icon: "Target"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "terapia-online",
+      name: "Terapia Online",
+      description: "Sesiones de psicología por videollamada con la misma calidad y profesionalidad que la consulta presencial. Ideal si vives fuera de Alicante, tienes dificultades de movilidad o prefieres la comodidad de tu hogar. Mismas psicólogas, mismo nivel de atención, máxima flexibilidad horaria.",
+      benefits: [
+        "Misma calidad que la terapia presencial",
+        "Flexibilidad de horarios y ubicación",
+        "Comodidad y privacidad desde tu espacio seguro"
+      ],
+      icon: "Monitor"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "evaluacion-psicologica",
+      name: "Evaluación Psicológica",
+      description: "Realizamos evaluaciones psicológicas completas para identificar con precisión tu situación emocional y diseñar el plan terapéutico más adecuado. Incluye entrevistas clínicas, pruebas específicas cuando son necesarias y un informe detallado con recomendaciones personalizadas.",
+      benefits: [
+        "Diagnóstico preciso de tu situación emocional",
+        "Plan terapéutico personalizado y basado en evidencia",
+        "Informe completo con recomendaciones específicas"
+      ],
+      icon: "Target"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Primer Contacto",
+      description: "Llámanos al 641 13 66 84 o escríbenos por WhatsApp. Te atenderemos personalmente para conocer tu motivo de consulta y asignarte la psicóloga más adecuada a tus necesidades. Resolvemos tus dudas sobre el proceso terapéutico."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Primera Sesión de Evaluación",
+      description: "En tu primera cita, crearemos un espacio seguro donde te sentirás escuchado y comprendido desde el inicio. Realizamos una evaluación inicial para entender tu situación, tus objetivos y diseñar juntos el camino terapéutico más efectivo para ti."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Proceso Terapéutico",
+      description: "Sesiones regulares adaptadas a tu ritmo, donde trabajaremos con herramientas prácticas y técnicas basadas en evidencia. Te acompañamos con cercanía, profesionalidad y respeto absoluto, proporcionándote estrategias aplicables en tu día a día para generar cambios reales."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Crecimiento y Alta",
+      description: "Alcanzas tus objetivos terapéuticos, recuperas tu equilibrio emocional y recibes el alta con las herramientas necesarias para mantener tu bienestar. Muchos de nuestros pacientes completan su proceso en aproximadamente un año, sintiendo una transformación significativa en su vida."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración Excelente: 5 Estrellas en Google",
+      description: "Nuestras 45 reseñas con 5 estrellas en Google reflejan la satisfacción de nuestros pacientes. Destacan nuestra profesionalidad, empatía, cercanía y la efectividad de nuestros tratamientos. Cada testimonio confirma que en Volare Psicología encontrarás un espacio seguro donde sentirte escuchado y comprendido desde el primer momento.",
+      icon: "Heart"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Equipo Altamente Cualificado y Empático",
+      description: "Nuestro equipo de psicólogas (Candela, Martina y Mónica) está en constante formación y cuenta con amplia experiencia clínica. Nuestras pacientes destacan nuestra capacidad para crear un ambiente de confianza absoluta, nuestra cercanía y nuestra implicación real en cada proceso terapéutico. Trabajamos con dedicación para acompañarte hacia el cambio que necesitas.",
+      icon: "User"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Herramientas Prácticas para tu Día a Día",
+      description: "No solo te escuchamos: te proporcionamos estrategias concretas y herramientas aplicables en tu vida cotidiana. Nuestros pacientes valoran especialmente que les ayudamos a enfrentar situaciones que antes les desbordaban, ofreciendo recursos reales para mantener el equilibrio emocional más allá de las sesiones.",
+      icon: "Target"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Instalaciones Modernas y Modalidad Flexible",
+      description: "Disponemos de instalaciones amplias, modernas y cómodas en pleno centro de Alicante (Plaza Calvo Sotelo, 5), diseñadas para garantizar tu privacidad y comodidad. Además, ofrecemos terapia online con la misma calidad profesional, para que puedas recibir atención psicológica adaptada a tus circunstancias y preferencias.",
+      icon: "Monitor"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Candela Fernández Alcaraz",
+      role: "Psicóloga Directora",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
+      bio: "Psicólogos comprometidos con el bienestar emocional. En Volare Psicología ofrecemos un espacio seguro donde trabajar hacia una vida más plena y satisfactoria."
     },
+    {
+      name: "Martina",
+      role: "Psicóloga",
+      image: "/images/team/placeholder.jpg",
+      bio: "Psicólogos comprometidos con el bienestar emocional. En Volare Psicología ofrecemos un espacio seguro donde trabajar hacia una vida más plena y satisfactoria."
+    },
+    {
+      name: "Mónica",
+      role: "Psicóloga",
+      image: "/images/team/placeholder.jpg",
+      bio: "Psicólogos comprometidos con el bienestar emocional. En Volare Psicología ofrecemos un espacio seguro donde trabajar hacia una vida más plena y satisfactoria."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Volare Psicología - Imagen 1"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Volare Psicología - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Volare Psicología - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Volare Psicología - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "Volare Psicología - Imagen 5"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Cuánto dura una sesión en Volare Psicología?",
+      answer: "Las sesiones en Volare Psicología tienen una duración aproximada de 50-60 minutos. Este tiempo nos permite trabajar en profundidad tus necesidades y ofrecerte herramientas prácticas. La frecuencia inicial suele ser semanal o quincenal, adaptándose después según tu evolución y objetivos terapéuticos."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Ofrecéis terapia online o solo presencial?",
+      answer: "En Volare Psicología ofrecemos ambas modalidades: terapia presencial en nuestro centro de Alicante (Plaza Calvo Sotelo, 5) y terapia online por videollamada. La terapia online tiene la misma calidad y efectividad que la presencial, permitiéndote recibir atención profesional desde cualquier lugar. Tú eliges la modalidad que mejor se adapte a tus necesidades."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Cómo sé qué psicóloga es la más adecuada para mí?",
+      answer: "Nuestro equipo está formado por Candela, Martina y Mónica, todas altamente cualificadas y especializadas en diferentes áreas. Cuando contactes con nosotros, hablaremos contigo para conocer tu situación y te asignaremos la profesional más adecuada según tus necesidades específicas. Todas nuestras psicólogas destacan por su empatía, cercanía y profesionalidad, como reflejan nuestras 45 reseñas de 5 estrellas."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Trabajáis con niños y adolescentes?",
+      answer: "Sí, en Volare Psicología ofrecemos atención especializada en psicología infantil y juvenil. Tratamos dificultades emocionales, trastornos del aprendizaje, problemas de conducta, alimentación infantil y otros desafíos propios de estas etapas. Contamos con instalaciones amplias y modernas adaptadas para crear un ambiente seguro donde los más jóvenes puedan expresarse con confianza."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Cuánto tiempo dura un proceso terapéutico?",
+      answer: "La duración del proceso terapéutico en Volare Psicología depende de cada persona, sus objetivos y su situación particular. Algunos pacientes experimentan mejoras significativas en pocos meses, mientras que otros procesos más profundos pueden durar alrededor de un año. Trabajamos siempre adaptándonos a tu ritmo, y muchos de nuestros pacientes han completado su terapia sintiéndose transformados y con herramientas para mantener su bienestar."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Qué problemas o trastornos tratáis?",
+      answer: "En Volare Psicología tratamos ansiedad, depresión, trastornos alimenticios, fobias, problemas de autoestima, autoexigencia y perfeccionismo, crisis e insatisfacción vital, duelo, dependencia emocional, insatisfacción con la imagen corporal, terapia de pareja y familia, y psicología infantil y juvenil. Utilizamos terapia cognitivo-conductual y otras técnicas basadas en evidencia científica, siempre adaptadas a cada persona."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Aceptáis seguros médicos?",
+      answer: "Volare Psicología trabaja principalmente con consulta privada. También aceptamos seguros de reembolso, donde tú adelantas el pago de la sesión y después tu aseguradora te devuelve el importe según las condiciones de tu póliza. Te recomendamos consultar con tu compañía de seguros las condiciones específicas de reembolso antes de comenzar el tratamiento."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Cómo puedo pedir cita en Volare Psicología?",
+      answer: "Pedir cita es muy sencillo: puedes llamarnos directamente al 641 13 66 84 o escribirnos por WhatsApp al mismo número. Te atenderemos personalmente para conocer tu situación, resolver tus dudas y agendar tu primera sesión en el horario que mejor te venga, tanto para terapia presencial en Alicante como online."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Volare Psicología",
+    defaultTitle: "Volare Psicología Alicante | Psicólogas Expertas",
+    defaultDescription: "Centro de psicología en Alicante especializado en terapia individual, ansiedad, depresión, trastornos alimenticios, terapia de pareja y psicología infantil. 5★ en Google. Presencial y online.",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "psicología Alicante",
+      "psicólogo Alicante",
+      "Volare Psicología",
+      "terapia psicológica Alicante",
+      "ansiedad Alicante",
+      "terapia de pareja Alicante",
+      "psicología infantil Alicante",
+      "trastornos alimenticios Alicante",
+      "depresión Alicante",
+      "terapia online Alicante",
+      "psicóloga Candela Fernández",
+      "centro psicología Alicante Álava"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Volare Psicología",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Pl. Calvo Sotelo, 5, primero, 03001 Alicante (Alacant), Alicante, España, Alicante, Álava"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Psicología",
+    "en Alicante"
+  ],
+  heroDescription: "En Volare Psicología encontrarás profesionales altamente cualificadas que te acompañarán en tu proceso de crecimiento personal. Trabajamos con niños, adolescentes y adultos, ofreciendo herramientas prácticas para que recuperes tu equilibrio emocional. Atención presencial en Alicante y online, con un enfoque cercano, empático y completamente adaptado a tus necesidades.",
+  specialty: "Psicología Clínica Integral",
+  ctaLabel: "Tu Bienestar",
+  ctaHeadline: "¿Listo para dar el primer paso hacia tu bienestar?",
+  ctaDescription: "Solicita tu primera consulta y descubre cómo podemos acompañarte en tu proceso de cambio. Atención presencial en Alicante y también online.",
+  statsLabel: "Pacientes",
+  schemaType: "PsychologicalTreatment",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
